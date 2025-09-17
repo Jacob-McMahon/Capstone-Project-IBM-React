@@ -1,1 +1,1 @@
-a readme 
+this is a readme file I will fill it out more as I go
