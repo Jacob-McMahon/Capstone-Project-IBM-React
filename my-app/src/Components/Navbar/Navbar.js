@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ handleClick }) => {
   return (
@@ -37,7 +38,7 @@ const Navbar = ({ handleClick }) => {
       <ul className="nav__links active">
         {/* List item for the 'Home' link */}
         <li className="link">
-          <a href="../Landing_Page/LandingPage.html">Home</a>
+          <Link to ="/">Home</Link>
         </li>
         {/* List item for the 'Appointments' link */}
         <li className="link">
@@ -45,16 +46,16 @@ const Navbar = ({ handleClick }) => {
         </li>
         {/* List item for the 'Sign Up' link with a button */}
         <li className="link">
-          <a href="../Sign_Up//Sign_Up.html">
-            <button className="btn1">Sign Up</button>
-          </a>
-        </li>
-        {/* List item for the 'Login' link with a button */}
-        <li className="link">
-          <a href="../Login/Login.html">
-            <button className="btn1">Login</button>
-          </a>
-        </li>
+    <Link to="/signup">
+      <button className="btn1">Sign Up</button>
+    </Link>
+  </li>
+  {/* List item for the 'Login' link with a button */}
+  <li className="link">
+    <Link to="/login">
+      <button className="btn1">Login</button>
+    </Link>
+  </li>
       </ul>
     </nav>
   );
